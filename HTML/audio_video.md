@@ -40,6 +40,9 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
 </details>
   
 ## Some important points to remember
+  
+- Chrome doesn't support autoplay
+- In case when you want to insert multiple file formats of the same file, we use the **\<source>** tag in place of the **src** attribute of the audio and video tags
 
 ## Practice problem statements
   
