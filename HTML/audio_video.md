@@ -5,7 +5,7 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
 <details><summary>Audio Tag</summary>
 <p>
   
-**\<audio> -** The <audio> tag allows you to embed/add audio files on Webpages
+**\<audio> -** The \<audio> tag allows you to embed/add audio files on Webpages
   - **Attributes of \<audio> Tag -**
   
   | Attribute | Values | Description |
@@ -21,7 +21,7 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
 <details><summary>Video Tag</summary>
 <p>  
     
-**\<video> -** The <video> tag is used to embed video into your web page
+**\<video> -** The \<video> tag is used to embed video into your web page
   - **Attributes of \<audio> Tag -**
   
   | Attribute | Values | Description |
