@@ -82,6 +82,9 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
     </body>
 </html>
 ```
+  
+</p>
+</details>
 <details><summary>Use of Video on web pages using HTML5</summary>
 <p>
 
@@ -121,3 +124,6 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
     </body>
 </html>
 ```
+  
+</p>
+</details>  
