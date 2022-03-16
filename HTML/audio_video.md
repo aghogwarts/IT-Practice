@@ -49,7 +49,7 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
 ```diff
 - Question - 
   
-+ Create a webpage to set up an audio file with controls. The file should play on browser load and again as soon as it ends
++ Create a webpage to set up an audio file with controls. The file should play on browser load and again as soon as it ends.
 + Create another webpage to set up multiple file formats for the same audio file. It should play automatically with controls. Browser must display the appropriate message when a specific file isn't supported.
 ```
 ```html
@@ -79,6 +79,45 @@ HTML5 includes special elements (tags) allowing to include video and audio and t
             <source src="\\C:\Users\Admin\Documents\test\stay.ogg">
             Not Supported
         </audio>
+    </body>
+</html>
+```
+<details><summary>Use of Video on web pages using HTML5</summary>
+<p>
+
+```diff
+- Question - 
+  
++ Create a webpage to display a video file on a web page and plays automatically with controls. It's dimensions should be 150*150 px.
++ Create another webpage to set up multiple file formats for the same video file. It should play automatically with controls. Dimensions should be 100*100 px. Browser must display the appropriate message when a specific file isn't supported.
+```
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserting Video</title>
+    </head>
+    <body>
+        <h1>Inserting Single Video Source</h1>
+        <video height="150" width="150" controls autoplay src="\\C:\Users\Admin\Documents\test\stay.mp4">
+            Not Supported
+        </video>
+    </body>
+</html>
+```
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inserting Video</title>
+    </head>
+    <body>
+        <h1>Inserting Multiple Video Source</h1>
+        <video height="100" width="100" controls autoplay>
+            <source src="\\C:\Users\Admin\Documents\test\stay.mp4">
+            <source src="\\C:\Users\Admin\Documents\test\stay.ogg">
+            Not Supported
+        </video>
     </body>
 </html>
 ```
