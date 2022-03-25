@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Switch Case Qs</title>
+        <script lang="javascript">
+            function mcq()
+            {
+                var ans
+                ans = question.option.value
+                switch(ans)
+                {
+                    case "Mo":
+                        question.answer.value = "Wrong answer: Option 2 - Chlorine is correct"
+                        break
+                    case "Cl":
+                        question.answer.value = "Correct answer !"
+                        break
+                    case "La":
+                        question.answer.value = "Wrong answer: Option 2 - Chlorine is correct"
+                        break
+                    case "O":
+                        question.answer.value = "Wrong answer: Option 2 - Chlorine is correct"
+                        break
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Use Switch Case to create a Multiple Choice Question</h1>
+        <form name="question">
+            Which one of these is a Group 17 element :<br><br>
+            <input type="radio" name="option" value="Mo">Molybdenum<br>
+            <input type="radio" name="option" value="Cl">Chlorine<br>
+            <input type="radio" name="option" value="La">Lanthanum<br>
+            <input type="radio" name="option" value="O">Oxygen<br><br>
+            <input type="text" name="answer" disabled size="40"><br><br>
+            <input type="button" value="SUBMIT" onclick="mcq()">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Switch Case Qs</title>
+        <script lang="javascript">
+            function arithmetic()
+            {
+                var ans,operation,n1,n2
+                n1 = parseInt(math.num1.value)
+                n2 = parseInt(math.num2.value)
+                operation = math.opt.value
+                switch(operation)
+                {
+                    case "add":
+                        ans = n1+n2
+                        break
+                    case "sub":
+                        ans = n1-n2
+                        break
+                    case "mul":
+                        ans = n1*n2
+                        break
+                    case "div":
+                        ans = n1/n2
+                        break
+                    case "mod":
+                        ans = n1%n2
+                        break
+                }
+                math.answer.value = "Answer - "+ans
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Use switch case to accept 2 numbers and perform the arithmetic operation which the user selects</h1>
+        <form name="math">
+            Enter 2 Numbers to perform arithmetic operations with :<br>
+            <input type="number" name="num1" placeholder="Number 1" required> <input type="number" name="num2" placeholder="Number 2" required><br><br>
+            Select the arithmetic operation to perform with these 2 numbers :<br>
+            <input type="radio" name="opt" value="add">Addition (a+b)<br>
+            <input type="radio" name="opt" value="sub">Subtraction (a-b)<br>
+            <input type="radio" name="opt" value="mul">Multiplication (a*b)<br>
+            <input type="radio" name="opt" value="div">Division (a/b)<br>
+            <input type="radio" name="opt" value="mod">Modulus (a%b)<br><br>
+            <input type="text" name="answer" disabled size="40"><br><br>
+            <input type="button" value="CALCULATE" onclick="arithmetic()">
+        </form>
+    </body>
+</html>
