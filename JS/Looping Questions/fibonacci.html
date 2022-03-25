@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Looping Qs
+        </title>
+    </head>
+    <body>
+        <h1>
+            Print the Fibonacci Series - 
+        </h1>
+        <script lang="javascript">
+            function fibonacci()
+            {
+                var n1,n2,sum,i,terms,series
+                terms = parseInt(prompt("Enter the number of terms to be printed of the Fibonacci Series - "))
+                n1 = 0
+                n2 = 1
+                document.write("First "+terms+" numbers of the Fibonacci Series are - <br><br>")
+                for(i=1;i<=terms;i++)
+                {
+                    document.write(n1+"<br>")
+                    sum = n1+n2
+                    n1=n2
+                    n2=sum
+                }
+            }
+            fibonacci()
+        </script>
+    </body>
+</html>

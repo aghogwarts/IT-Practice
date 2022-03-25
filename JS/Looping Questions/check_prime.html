@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Looping Qs
+        </title>
+    </head>
+    <body>
+        <h1>
+            Find whether the entered number is prime or not
+        </h1>
+        <script lang="javascript">
+            function prime()
+            {
+                var n,ans,i
+                n = parseInt(prompt("Enter a number to check whether it is a prime number or not -"))
+                ans = 1
+                for(i=2;i<n;i++)
+                {
+                    if(n%i==0)
+                    {
+                        ans=0
+                        break
+                    }
+                }
+                if(ans==1)
+                {
+                    document.write("The number "+n+" is a prime number")
+                }
+                else
+                {
+                    document.write("The number "+n+" is not a prime number")
+                }
+            }
+            prime()
+        </script>
+    </body>
+</html>

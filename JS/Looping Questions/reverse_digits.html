@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Looping Qs
+        </title>
+    </head>
+    <body>
+        <h1>
+            Print the digits of the number entered by the user in a reversed order
+        </h1>
+        <script lang="javascript">
+            function reversed_digits()
+            {
+                var n,len,i,x,reversed
+                n = prompt("Enter a number -")
+                len = n.length
+                reversed=0
+                for(i=len;i>=0;--i) //somethings happening wrong ask miss
+                {
+                    x = n.charAt(i)
+                    reversed = reversed + x
+                }
+                document.write("The digits of the number "+n+" in reverse = "+reversed)
+            }
+            reversed_digits()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Looping Qs
+        </title>
+    </head>
+    <body>
+        <h1>
+            Print Mathematical Table of 'n'
+        </h1>
+        <script lang="javascript">
+            function print_table()
+            {
+                var n,i,product
+                n = parseInt(prompt("Enter a number to print its mathematical table -"))
+                for(i=1;i<=10;i++)
+                {
+                    product = n * i
+                    document.write(n+" × "+i+" = "+product+"<br>")
+                }
+            }
+            print_table()
+        </script>
+    </body>
+</html>

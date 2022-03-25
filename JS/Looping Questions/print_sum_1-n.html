@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Looping Qs
+        </title>
+    </head>
+    <body>
+        <h1>
+            Print Sum of Numbers from 1 to 'n'
+        </h1>
+        <script lang="javascript">
+            function print_sum_1_to_n()
+            {
+                var n,sum,i
+                n = parseInt(prompt("Enter a number -"))
+                sum = 0
+                for(i=1;i<=n;i++)
+                {
+                    sum = sum + i
+                }
+                document.write("Sum of all numbers till "+n+" is = "+sum)
+            }
+            print_sum_1_to_n()
+        </script>
+    </body>
+</html>
