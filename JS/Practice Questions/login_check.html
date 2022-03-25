@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Practice Qs</title>
+        <script lang="javascript">
+            function credentials()
+            {
+                var user,pass,user_creds,pass_creds
+                user = login.username.value
+                pass = login.password.value
+                user_creds = "sample_user"
+                pass_creds = "user123"
+                if(user==user_creds && pass==pass_creds)
+                {
+                    alert("You are logged in successfully")
+                }
+                else
+                {
+                    alert("Either of username or password entered is invalid")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Check whether the login credentials are correct or not</h1><br>
+        <form name="login">
+            Enter Username : <input type="text" name="username" autofocus required><br>
+            Enter Password : <input type="password" name="password" required><br><br>
+            <input type="submit" value="LOGIN" onclick="credentials()">
+        </form>
+    </body>
+</html>

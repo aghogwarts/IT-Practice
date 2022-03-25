@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Practice Qs</title>
+        <script lang="javascript">
+            function check_number()
+            {
+                var 
+                num = form1.number.value
+                numcheck = isNaN(num)
+                if(numcheck==false)
+                {
+                    alert("Entered value is a number")
+                }
+                else
+                {
+                    alert("Entered value is not a number")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Accept a value and validate if the given value is a number or not</h1><br>
+        <form name="form1">
+            Enter a Number : <input type="text" name="number" autofocus required><br><br>
+            <input type="submit" value="CHECK" onclick="check_number()">
+        </form>
+    </body>
+</html>
