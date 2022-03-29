@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title>Making TABLE in HTML</title>
+<script language = "javascript">
+
+function table()
+{
+var end = f1.E1.value;
+var i
+var start = f1.S1.value;
+
+if(start>end)
+    {
+      alert("Please Enter Ending Number Greater than Starting Number");
+      } else { 
+      for(i=start;i<=end;i++)
+         { 
+           document.write(i + "<br>");
+         }
+      }
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Starting Number:<input type="number" name="S1" required><br>
+Enter Ending Number:<input type="number" name="E1" required><br>
+<input type="submit" value = "    SHOW ME THE LIST    " onclick="table()" >
+</form>
+</body> 

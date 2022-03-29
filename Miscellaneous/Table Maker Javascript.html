@@ -1,0 +1,30 @@
+<!DOCTYPE html>/
+<html>
+<head>
+<title>Making Tables </title>
+<script language="javascript">
+var i;
+var num;
+var product;
+function table()
+{
+num=form.number.value;
+for(i=1;i<=10;i++)
+{ 
+product = num*i;
+document.write(num + " x " + i + " = " + product + "<br>");
+}
+
+}
+</script>
+</head>
+<body>
+<h1>Make Tables</h1>
+<form name="form">
+Enter Number:<input type="number" name="number" required>
+<input type="submit" onclick="table()">
+</form>
+</body>
+
+</html>
+

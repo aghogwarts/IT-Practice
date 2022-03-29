@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<title>Making TABLE in HTML</title>
+<script language = "javascript">
+function table()
+{
+var range = f1.r1.value;
+var i
+var num = f1.t1.value;
+for(i=1;i<=range;i++)
+{ 
+document.write(num + " x " + i + " = " + num*i + "<br>");
+}
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Number:<input type="number" name="t1" required><br>
+Enter Range:<input type="number" name="r1" required><br>
+<input type="submit" onclick="table()" >
+</form>
+</body>
+
+</html>

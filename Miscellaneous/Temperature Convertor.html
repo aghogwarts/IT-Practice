@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Temperature Convertor</title>
+<script language="javascript">
+
+function CeltoFah()
+{
+var c = F1.C1.value;
+var f = 1.8*c+32;
+F1.C2.value = c + " celsius = " + f + " Fahrenheit";
+}
+
+function FahtoCel()
+{
+var f = F1.F1.value;
+var c = 5/9*(f-32)
+F1.F2.value= f + " Fahrenheit = " + c + " Celsius";
+}
+</script>
+</head>
+<body>
+<h1>Convert Temperature</h1>
+<form name="F1">
+Enter Temperature (in degree Celsius):<input type="text" name="C1" required ><br><br>
+<input type="text" size="50" disabled name="C2"><br><br>
+<input type="button" value="Convert Celsius to Fahrenheit" onclick="CeltoFah()"><br><br>
+
+Enter Temperature (in degree Fahrenheit):<input type="text" name="F1" required ><br><br>
+<input type="text" size="50" disabled name="F2"><br><br>
+<input type="button" value="Convert Fahrenheit to Celsius" onclick="FahtoCel()"><br><br>
+</form>
+</body>
+</html>
